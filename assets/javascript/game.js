@@ -1,17 +1,23 @@
 
 var currentNum = Math.floor((Math.random() * 100) + 20);
-var crystal1 = Math.floor((Math.random() * 100) + 12);
-var crystal2 = Math.floor((Math.random() * 100) + 12);
-var crystal3 = Math.floor((Math.random() * 100) + 12);
+var crystalValueOption1 = Math.floor((Math.random() * 12) + 1);
+var crystalValueOption2 = Math.floor((Math.random() * 12) + 1);
+var crystalValueOption3 = Math.floor((Math.random() * 12) + 1);
+var crystalValueOption4 = Math.floor((Math.random() * 12) + 1);
 var loses = 0;
 var wins = 0;
 
+function endGame() {
+
+
+
+}
+
+numberOptions = [crystalValueOption1, crystalValueOption2, crystalValueOption3, crystalValueOption4];
 
 $("#number-to-guess").text(currentNum);
 
 var totalScore = 0;
-
-var numberOptions = [10, 5, 3, 7];
 
 for (var i = 0; i < numberOptions.length; i++) {
 
@@ -29,12 +35,14 @@ for (var i = 0; i < numberOptions.length; i++) {
 
 $(".crystal-image").on("click", function() {
 
+
     var crystalValue = ($(this).attr("data-crystalvalue"));
     crystalValue = parseInt(crystalValue);
 
     totalScore += crystalValue;
 
-    alert("New Score: " + totalScore);
+    var scoreSpan = $("#newScore").text(totalScore);
+    $("#newScore").append(scoreSpan);
 
     if (totalScore === currentNum) {
         alert("You Win!!");
@@ -48,25 +56,8 @@ $(".crystal-image").on("click", function() {
         $("#loses").append(loseSpan);
     }
 
+
+
 });
 
-// var increment = numberOptions[Math.round(Math.random())];
-
-// $(".crystal-image").on("click", function() {
-    
-//     totalScore += 10;
-    
-//     alert("New score: " + totalScore);
-    
-//     if (totalScore === currentNum) {
-        
-//         alert("You Win!!");
-        
-//     } else if (totalScore >= currentNum) {
-        
-//         alert("You Lose!!");
-        
-//     }
-    
-// });
 
