@@ -1,12 +1,66 @@
+* {
+    
+    text-align: center;
+    
+}
+
+body {
+    background: linear-gradient(to right, #FFEEFF 0%, #C7FFFA 50%, #FFEEFF 100%);
+}
+
+p {
+    font-size: 25px;
+    font-family: 'VT323', monospace;
+    line-height: 40px;
+}
+
+span {
+    font-size: 25px;
+    font-family: 'VT323', monospace;
+    line-height: 40px;
+}
+
 .crystal-image {
-    width: 300px;
-    height: 300px;
-  }
+    width: 150px;
+    height: 150px;
+    border: 5px solid #E6FFDE;
+    border-radius: 25px;
+    margin: 50px 20px 30px 20px;
+}
 
-  h1 {
-      color: red;
-  }
+h1 {
+    color: black;
+    font-family: 'VT323', monospace;
+    font-size: 69px;
+}
 
-  #hidden {
-      display: none;
-  }
+h2 {
+    font-family: 'VT323', monospace;
+    font-size: 56px;
+}
+
+#hidden {
+    display: none;
+}
+
+#topSpace {
+    
+    margin-top: 20px;
+    
+}
+
+#bottomSpace {
+    
+    margin-bottom: 20px;
+    
+}
+
+#number-to-guess {
+    font-size: 69px;
+}
+
+#newScore {
+
+    font-size: 56px;
+
+}

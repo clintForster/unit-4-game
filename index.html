@@ -7,33 +7,34 @@
     <title>Clint's Crystal Game</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    
 </head>
 <body>
-
-<div id ="crystals">
-    <img id="hidden" class ="crystal-image" src = "https://images-na.ssl-images-amazon.com/images/I/51snWRfynML._SL500_.jpg">
-</div>
-    <h1>Crystals Collector!</h1>
-
+    
+    <h1 id = "bottomSpace" >Crystals Collector!</h1>
+    
     <p>You will be given a random number at the start of the game.<br>
         There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br>
         You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br>
         The value of each crystal is hidden until you click on it. Each time the game starts, the game will change the values of each crystal.
     </p>
-
-    <h1>Number to Guess: <span id="number-to-guess"></span></h1>
-
-    <h2>New Score: <span id="newScore"></span></h2>
-
-    <p>WINS: <span id="wins"></span></p>
-    <p>LOSES: <span id="loses"></span></p>
     
-
+    <h1 id = "topSpace" >Number to Guess: <span id="number-to-guess"></span></h1>
+    
+    <div id ="crystals">
+        
+    </div>
+    
+    <h2>New Score: <span id="newScore"></span></h2>
+    
+    <p>WINS: <span id="wins"></span>      LOSES: <span id="loses"></span></p>
+    
+    
 </body>
 <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>
